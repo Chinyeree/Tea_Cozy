@@ -1,0 +1,144 @@
+
+html{
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+.navbar{
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: seashell;
+    font-family: cursive;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+li a{
+    color: seashell;
+}
+.Mission{
+    display: flex;;
+}
+
+.background-container {
+    background-image: url('./images/img-mission-background.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+    height: 700px; /* Fixed height */
+    width: 1200px; /* Fixed width */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Establish a positioning context */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+
+
+.overlay {
+    background-color: black; /* Solid black background */
+    color: seashell; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    margin: 5px 0; /* Space between text elements */
+    width: 100%; /* Make the text block full width */
+    text-align: center; /* Center text alignment */
+}
+
+
+img{
+    height: 200px;
+    width: 300px;
+}
+.TeaParent{
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items */
+    padding: 20px; /* Add some padding */
+}
+.header {
+    text-align: center; /* Center text for the header */
+    width: 100%; /* Make header take full width */
+    margin-bottom: 15px; /* Space below the header */
+}
+
+.flex-item {
+    text-align: center; /* Center images and paragraphs */
+    margin: 10px; /* Space between items */
+}
+
+.flex-image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (min-width: 600px) {
+    .flex-item {
+        width: calc(33.33% - 20px); /* Three items on the first row */
+    }
+}
+
+@media (max-width: 599px) {
+    .flex-item {
+        width: calc(50% - 20px); /* Two items on the second row for smaller screens */
+    }
+}
+
+h2 {
+    margin: 0; /* Remove default margin */
+    color: seashell; /* Text color for the title */
+}
+
+p {
+    margin: 5px 0 10px; /* Space above and below paragraphs */
+    color: seashell; /* Text color for description */
+}
+.header h2{
+    padding-bottom: 10px;
+}
+.locations{
+    background-image:url('./images/img-locations-background.jpg') ;
+    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+    text-align: center; /* Center text alignment */
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.headers{
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.place-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the boxes */
+    gap: 20px; /* Space between boxes */
+}
+
+.place {
+    background-color: black; /* Solid black background */
+    padding: 30px; /* Padding inside the boxes */
+    flex: 1; /* Allow boxes to grow equally */
+    max-width: 300px; /* Optional: set a max width for the boxes */
+    min-width: 200px; /* Optional: set a min width for the boxes */}
+
+.In-center{
+    text-align: center;
+}
